@@ -22,8 +22,8 @@ object Dependencies {
     "Kamon Repository Snapshots" at "http://snapshots.kamon.io"
   )
 
-  val kamonVersion      = "0.6.3"
-  val akkaVersion       = "2.3.14"
+  val kamonVersion      = "0.6.5"   // "0.6.3"
+  val akkaVersion       = "2.4.16"  // "2.3.14"
   val slf4jVersion      = "1.7.7"
 
   val kamonCore         = "io.kamon"                  %%  "kamon-core"            % kamonVersion
@@ -36,7 +36,7 @@ object Dependencies {
   val slf4jApi          = "org.slf4j"                 %   "slf4j-api"             % slf4jVersion
   val slf4jnop          = "org.slf4j"                 %   "slf4j-nop"             % slf4jVersion
 
-  val scalatest         = "org.scalatest"             %%  "scalatest"             % "2.2.4"
+  val scalatest         = "org.scalatest"             %%  "scalatest"             % "3.0.1" // "2.2.4"
 
   def compileScope   (deps: ModuleID*): Seq[ModuleID] = deps map (_ % "compile")
   def testScope      (deps: ModuleID*): Seq[ModuleID] = deps map (_ % "test")

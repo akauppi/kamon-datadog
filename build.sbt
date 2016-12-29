@@ -19,6 +19,7 @@ import Dependencies._
 
 lazy val root = (project in file("."))
   .settings(name := "kamon-datadog")
+  .settings(version := "0.6.4-ak-SNAPSHOT")    // without this, version is "0.1-SNAPSHOT" (where does it come from?)
   .settings(basicSettings: _*)
   .settings(formatSettings: _*)
   .settings(
